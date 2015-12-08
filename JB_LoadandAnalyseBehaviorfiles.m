@@ -2,6 +2,8 @@ function [data] = JB_LoadandAnalyseBehaviorfiles(currfile, fileSession)
 
 % To analyse a particular filename: data = JB_Loadbehaviorfiles('JB00132_022415.mat')
 % To analyse all files in current directory data = JB_Loadbehaviorfiles
+
+
 load('DATA.mat');
 
 if nargin==1; % if a filename was inputted into function
@@ -15,7 +17,7 @@ if nargin==1; % if a filename was inputted into function
     
     data = JB_sessionAnalysisTEST(currfile, fileSession);
     
-elseif nargin==2;
+elseif nargin==2; % if a file session was inputted into function
         
     data = JB_sessionAnalysisTEST(currfile, fileSession);
     
